@@ -1,13 +1,15 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav class="navbar navbar-expand-lg border-bottom" style={{backgroundColor:"white"}}>
+    <nav class="navbar navbar-expand-lg border-bottom" style={{backgroundColor:"white",position:"sticky",top:"0",zIndex:"1"}}>
       <div class="container-fluid" style={{width:"100%"}}>
-        <img
+        <Link to="/" ><img
+        style={{ height: "12%", width: "20%", marginLeft: "28%" }}
           src="media/images/logo.svg"
-          style={{ height: "10%", width: "10%", marginLeft: "10%" }}
-        />
+          alt="logo"
+        /></Link>
         <button
           class="navbar-toggler"
           type="button"
@@ -29,29 +31,29 @@ function Navbar() {
             }}
           >
             <li class="nav-item" style={{ marginRight: "20px" }}>
-              <a class="nav-link" href="#">
+              <Link class="nav-link" to="/SignUp">
                 Signup
-              </a>
+              </Link>
             </li>
             <li class="nav-item" style={{ marginRight: "20px" }}>
-              <a class="nav-link" href="#">
+              <Link class="nav-link" to="/About">
                 About
-              </a>
+              </Link>
             </li>
             <li class="nav-item" style={{ marginRight: "20px" }}>
-              <a class="nav-link" href="#">
+              <Link class="nav-link" to="/Product">
                 Products
-              </a>
+              </Link>
             </li>
             <li class="nav-item" style={{ marginRight: "20px" }}>
-              <a class="nav-link" href="#">
+              <Link class="nav-link" to="/Pricing">
                 Pricing
-              </a>
+              </Link>
             </li>
             <li class="nav-item" style={{ marginRight: "20px" }}>
-              <a class="nav-link" href="#">
+              <Link class="nav-link"to="/Support">
                 Support
-              </a>
+              </Link>
             </li>
             <li class="nav-item" style={{alignItems:"center",display:"flex" }}>
             <i class="fa-solid fa-bars"></i>
