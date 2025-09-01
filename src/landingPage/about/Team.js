@@ -10,7 +10,7 @@ function Team() {
         <div className="col-4">
           <img
             src="media/images/nithinKamath.jpg"
-            alt="Team"
+            alt="Team" 
             className="mb-5"
             style={{
               width: "65%",
