@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <div>
-      <div style={{paddingLeft:"10%",paddingRight:"10%", backgroundColor:"#f8f9fa", paddingTop:"40px",marginTop:"50px"}}>
+      <div className="border-top" style={{paddingLeft:"10%",paddingRight:"10%", backgroundColor:"#f8f9fa", paddingTop:"40px",marginTop:"50px"}}>
         <div className="row">
           <div className="col-3">
             <img
